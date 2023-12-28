@@ -1,0 +1,12 @@
+Fixed Size Questions
+--> Max/Min subarray of size k
+--> 1st -ve in every subarray of size k
+--> count occurence of anagram
+--> max of all subarray of size k
+
+Variable Size Questions
+--> largest/smallest subarray of sum k
+--> largest substring of k distinct characters
+--> Length of longest substring with no repeating characters
+--> Pick toy
+--> minimum window substring

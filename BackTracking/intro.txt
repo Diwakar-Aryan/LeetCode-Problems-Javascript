@@ -1,0 +1,5 @@
+Optimized way of Brute Force
+Use backtracking when :
+    i) You are explicitly asked to return a collection of all answers
+    ii) You are concerned with actual solutions rather than say most optimum value of some parameter (if it is later then use greedy or DP)
+    
