@@ -8,40 +8,42 @@ function mergeSortAlgorithm(nums, l, r) {
   let mid = l + parseInt((r - l) / 2);
   mergeSortAlgorithm(nums, l, mid);
   mergeSortAlgorithm(nums, mid + 1, r);
-  mergeSortAlgorithm();
+  merge(nums, l, mid, r);
 }
 
 function merge(nums, l, mid, r) {
   let n1 = mid - l + 1;
   let n2 = r - mid;
-  let X = new Array(n1),
-    Y = new Array(n2);
+  let larr = new Array(n1);
+  let rarr = new Array(n2);
+
+  //copying data to temp arr
   for (let i = 0; i < n1; i++) {
-    X[i] = nums[l + i];
+    larr[i] = nums[l + i];
   }
   for (let j = 0; j < n2; j++) {
-    Y[j] = nums[mid + 1 + j];
+    rarr[j] = nums[mid + 1 + j];
   }
   let i = 0;
-  j = 0;
-  k = 1;
+  let j = 0;
+  let k = l;
   while (i < n1 && j < n2) {
-    if (X[i] <= Y[j]) {
-      nums[k] = X[i];
+    if (larr[i] <= rarr[j]) {
+      nums[k] = larr[i];
       i = i + 1;
     } else {
-      nums[k] = Y[j];
+      nums[k] = rarr[j];
       j = j + 1;
     }
     k++;
   }
   while (i < n1) {
-    nums[k] = X[i];
+    nums[k] = larr[i];
     i = i + 1;
     k = k + 1;
   }
   while (j < n2) {
-    nums[k] = Y[j];
+    nums[k] = rarr[j];
     j = j + 1;
     k = k + 1;
   }
@@ -49,6 +51,6 @@ function merge(nums, l, mid, r) {
 
 let nums = [12, 11, 13, 5, 6, 7];
 
-mergeSortAlgorithm(nums, 0, 4);
+mergeSortAlgorithm(nums, 0, nums.length - 1);
 
 console.log(nums);
