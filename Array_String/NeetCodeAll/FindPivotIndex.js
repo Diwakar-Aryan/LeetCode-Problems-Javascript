@@ -1,9 +1,5 @@
 /**
  * 724. Find Pivot Index
-Easy
-Topics
-Companies
-Hint
 Given an array of integers nums, calculate the pivot index of this array.
 
 The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right.
@@ -16,29 +12,26 @@ Return the leftmost pivot index. If no such index exists, return -1.
  */
 
 
-var pivotIndex = function (nums) {
+const pivotIndex = function (nums) {
 
-   let lp = 0, rp = nums.length -1 , ls = nums[lp] , rs = nums[rp]
+   let lSum = 0;
+   const tSum = nums.reduce((previous, current) => {
+      return previous  + current
+   }, 0)
 
-   while(lp < rp) {
-         if(ls < rs) {
-         lp++
-         ls += nums[lp]
-      }
-      else if(ls > rs ) {
-         rp--
-         rs += nums[rp]
-      } else {
+   for (let i =1; i< nums.length;i++) {
+      lSum += nums[i-1]
+      const rSum = tSum - lSum - nums[i]
 
-         return (lp+1);
+      if(lSum === rSum ) {
+         return i
       }
    }
 
    return -1
-
 };
 
-// const T1 = pivotIndex([1, 7, 3, 6, 5, 6])
-const T2 = pivotIndex([1,2,3])
+const T1 = pivotIndex([1, 7, 3, 6, 5, 6])
+// const T2 = pivotIndex([1,2,3])
 
-console.log(T2)
+console.log(T1)
