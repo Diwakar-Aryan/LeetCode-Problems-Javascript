@@ -22,30 +22,26 @@ Output: false
  */
 
 function reverseString(str) {
-    return str.split("").reverse().join("")
+  return str.split("").reverse().join("");
 }
 
-const validPalindrome = function(s) {
+const validPalindrome = function (s) {
+  let fp = 0,
+    sp = s.length - 1;
 
-    let fp = 0, sp = s.length -1;
-
-    while(fp<=sp){
-
-        if(s[fp]!== s[sp]){
-            let skipL = s.substring(fp+1,sp+1)
-            let skipR = s.substring(fp,sp)
-            return (skipL === reverseString(skipL) || skipR === reverseString(skipR))
-        }
-
-        fp++;
-        sp--;
-
+  while (fp <= sp) {
+    if (s[fp] !== s[sp]) {
+      let skipL = s.substring(fp + 1, sp + 1);
+      let skipR = s.substring(fp, sp);
+      return skipL === reverseString(skipL) || skipR === reverseString(skipR);
     }
-    return true
 
-}
+    fp++;
+    sp--;
+  }
+  return true;
+};
 
-const T1 = validPalindrome("abc")
+const T1 = validPalindrome("abc");
 
-
-console.log(T1)
+console.log(T1);
