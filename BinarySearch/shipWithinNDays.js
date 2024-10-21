@@ -46,11 +46,10 @@ var shipWithinDays = function (weights, days) {
    let l = 0
    let r = 0
 
-   let res = r
 
    function canship(cap) {
       let ships = 1, currentCapacity = cap
-      for (const w in weights) {
+      for (const w of weights) {
          if (currentCapacity - w < 0) {
             ships++
             currentCapacity = cap
@@ -67,11 +66,9 @@ var shipWithinDays = function (weights, days) {
       r += weight
    }
 
+   let res = r
    while (l <= r) {
       let cap = Math.floor((l + r) / 2)
-      console.log(cap)
-      console.log(canship(cap));
-      
       if (canship(cap)) {
          res = Math.min(res, cap)
          r = cap - 1
@@ -84,4 +81,5 @@ var shipWithinDays = function (weights, days) {
 
 
 const T1 = shipWithinDays([1, 2, 3, 4, 5], 2)
-console.log(T1);
+const T2 = shipWithinDays([1, 2, 3, 1, 1], 4)
+console.log(T1, T2);
