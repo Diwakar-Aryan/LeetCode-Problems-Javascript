@@ -24,7 +24,7 @@ Output: 1
  * @param {string} tiles
  * @return {number}
  */
-var numTilePossibilities = function (tiles) {
+const numTilePossibilities = function (tiles) {
   let result = new Set();
   let flag = new Map();
   let s = "";

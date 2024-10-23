@@ -29,7 +29,7 @@ Output: []
  
 */
 
-var combinationSum = function (candidates, target) {
+const combinationSum = function (candidates, target) {
   let res = [];
   candidates.sort((a, b) => a - b);
   backtrack(res, [], candidates, target, 0);

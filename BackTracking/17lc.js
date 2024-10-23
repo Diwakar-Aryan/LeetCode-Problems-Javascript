@@ -21,7 +21,7 @@ Output: ["a","b","c"]
  
 */
 
-var letterCombinations = function (digits) {
+const letterCombinations = function (digits) {
   let res = [];
   let digitMap = {
     2: "abc",

@@ -42,7 +42,7 @@ Explanation:
  * @param {number} days
  * @return {number}
  */
-var shipWithinDays = function (weights, days) {
+const shipWithinDays = function (weights, days) {
    let l = 0
    let r = 0
 

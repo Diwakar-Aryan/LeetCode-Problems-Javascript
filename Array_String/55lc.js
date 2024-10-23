@@ -1,4 +1,4 @@
-var canJump = function (nums) {
+const canJump = function (nums) {
   let i = 0;
   for (let reach = 0; i < nums.length && i <= reach; ++i) {
     reach = Math.max(reach, i + nums[i]);

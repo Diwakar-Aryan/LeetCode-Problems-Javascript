@@ -20,7 +20,7 @@ Explanation: n = 9 since there are 9 numbers, so all numbers are in the range [0
 
 */
 
-var missingNumber = function (nums) {
+const missingNumber = function (nums) {
   let i = 0;
   let n = nums.length;
 

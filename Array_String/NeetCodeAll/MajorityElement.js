@@ -19,7 +19,7 @@ Output: 2
  * @param {number[]} nums
  * @return {number}
  */
-var majorityElement = function (nums) {
+const majorityElement = function (nums) {
 
    let m ; let i =0;
 

@@ -1,4 +1,4 @@
-var findMaxAverage = function (arr, k) {
+const findMaxAverage = function (arr, k) {
   const results = [];
   let windowSum = 0;
   let windowStart = 0;

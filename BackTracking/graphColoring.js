@@ -6,7 +6,7 @@ function backtracking(graph) {
     function - in this example it is the color for each continent
     */
   const solution = new Array(graph.length).fill(null);
-  // Start backtracking from the first variable
+  // Start backtracking from the first constiable
   if (backtrackingRec(graph, solution, 0)) return solution;
   return null; // No solution found at all
 }
@@ -16,9 +16,9 @@ function backtrackingRec(graph, solution, current) {
   //Try each color in the domaimn
   for (const color of getDomainValues(graph, solution, current)) {
     solution[current] = color;
-    const nextVar = selectUnassigned(graph, solution, current);
+    const nextconst = selectUnassigned(graph, solution, current);
     // Recursively explore potential solutions with this color
-    if (backtrackingRec(graph, solution, nextVar)) return true;
+    if (backtrackingRec(graph, solution, nextconst)) return true;
 
     // Backtrack if this color didn't work
     solution[current] = null;

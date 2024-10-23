@@ -25,7 +25,7 @@ Output: 4
  * @param {number} k
  * @return {number}
  */
-var findKthLargest = function (nums, k) {
+const findKthLargest = function (nums, k) {
   for (let i = 0; i < k; i++) {
     for (let j = i; j < nums.length; j++) {
       if (nums[j] > nums[i]) {
@@ -36,7 +36,7 @@ var findKthLargest = function (nums, k) {
   return nums[k - 1];
 };
 
-var findKthLargest2 = function (nums, k) {
+const findKthLargest2 = function (nums, k) {
   let i = 0;
   let j = nums.length - 1;
   while (i <= j) {

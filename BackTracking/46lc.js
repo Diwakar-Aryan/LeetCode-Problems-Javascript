@@ -17,7 +17,7 @@ Input: nums = [1]
 Output: [[1]]
  
 */
-var permute = function (nums) {
+const permute = function (nums) {
   let res = [];
   backtrack(res, nums, []);
   return res;

@@ -1,4 +1,4 @@
-var totalFruits = function (fruits) {
+const totalFruits = function (fruits) {
   let windowStart = 0;
   let maxLen = 0;
   let fruitMap = new Map();

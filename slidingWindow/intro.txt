@@ -4,7 +4,7 @@ Fixed Size Questions
 --> count occurence of anagram
 --> max of all subarray of size k
 
-Variable Size Questions
+constiable Size Questions
 --> largest/smallest subarray of sum k
 --> largest substring of k distinct characters
 --> Length of longest substring with no repeating characters

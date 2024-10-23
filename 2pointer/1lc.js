@@ -1,4 +1,4 @@
-var twoSum = function (nums, target) {
+const twoSum = function (nums, target) {
   let fp = 0;
   let sp = nums.length - 1;
   let resArr = [];

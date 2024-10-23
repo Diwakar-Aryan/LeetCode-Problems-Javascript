@@ -13,7 +13,7 @@ Output: true
 Explanation: Notice that the path visits the origin twice.
 */
 
-var isPathCrossing = function (path) {
+const isPathCrossing = function (path) {
   let x = 0;
   let y = 0;
   let visited = new Set(["0+0"]);

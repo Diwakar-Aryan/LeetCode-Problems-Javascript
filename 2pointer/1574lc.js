@@ -1,4 +1,4 @@
-var shortestWindowSort = function (arr) {
+const shortestWindowSort = function (arr) {
   let low = 0;
   let high = arr.length - 1;
 

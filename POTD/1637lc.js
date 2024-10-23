@@ -17,7 +17,7 @@ Output: 3
 
 */
 
-var maxWidthOfVerticalArea = function (points) {
+const maxWidthOfVerticalArea = function (points) {
   points.sort((a, b) => a[0] - b[0]);
   let currentMax = -Infinity;
 

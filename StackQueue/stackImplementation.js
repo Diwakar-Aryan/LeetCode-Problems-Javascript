@@ -1,4 +1,4 @@
-var isValid = function (s) {
+const isValid = function (s) {
   let stackArr = [];
   if (s.length % 2 !== 0) return false;
   let parObj = {

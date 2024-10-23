@@ -29,7 +29,7 @@ It is guaranteed that the answer is unique.
  * @param {number} k
  * @return {number[]}
  */
-var topKFrequent = function (nums, k) {
+const topKFrequent = function (nums, k) {
   let count = {}
   let freq = new Array(nums.length + 1).fill([])
 

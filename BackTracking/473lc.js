@@ -21,7 +21,7 @@ Explanation: You cannot find a way to form a square with all the matchsticks.
  * @param {number[]} matchsticks
  * @return {boolean}
  */
-var makesquare = function (matchsticks) {
+const makesquare = function (matchsticks) {
   let sum = matchsticks.reduce((prev, acc) => prev + acc, 0) / 4;
   let length = Math.floor(sum);
   console.log(length);

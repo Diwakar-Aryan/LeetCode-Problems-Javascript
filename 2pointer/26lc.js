@@ -1,4 +1,4 @@
-var removeDuplicates = function (arr) {
+const removeDuplicates = function (arr) {
   let fp = 1;
   let sp = 1; //iterator
   while (sp < arr.length) {

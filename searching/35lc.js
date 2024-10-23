@@ -20,7 +20,7 @@ Output: 4
 
 */
 
-var searchInsert = function (nums, target) {
+const searchInsert = function (nums, target) {
   let start = 0;
   let end = nums.length - 1;
   if (target < nums[start]) return -1;

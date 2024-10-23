@@ -26,7 +26,7 @@ function generateSubsets(nums, res = [], curr = [], i = 0) {
   generateSubsets(nums, res, [nums[i],...curr], i + 1);
 }
 
-var subsets = function (nums) {
+const subsets = function (nums) {
   let res = [];
   generateSubsets(nums, res);
   console.log(res);

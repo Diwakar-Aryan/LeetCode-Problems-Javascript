@@ -33,7 +33,7 @@ Therefore, you can't travel around the circuit once no matter where you start.
  
 */
 
-var canCompleteCircuit = function (gas, cost) {
+const canCompleteCircuit = function (gas, cost) {
   let res = new Array();
   for (let i = 0; i < gas.length; i++) {
     res.push(gas[i] - cost[i]);

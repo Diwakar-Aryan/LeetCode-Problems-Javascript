@@ -1,4 +1,4 @@
-var productExceptSelf = function (nums) {
+const productExceptSelf = function (nums) {
   let n = nums.length;
   let res = [];
   //Initializing the left hand side product

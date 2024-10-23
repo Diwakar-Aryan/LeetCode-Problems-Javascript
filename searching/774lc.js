@@ -24,7 +24,7 @@ Output: "x"
 Explanation: There are no characters in letters that is lexicographically greater than 'z' so we return letters[0].
 */
 
-var nextGreatestLetter = function (letters, target) {
+const nextGreatestLetter = function (letters, target) {
   let start = 0;
   let end = letters.length;
   while(start<end){

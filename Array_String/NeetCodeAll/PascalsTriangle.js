@@ -10,7 +10,7 @@
  * @returns 
  */
 
-var generateTri = function (numRows) {
+const generateTri = function (numRows) {
 
    const res = [[1]]
    

@@ -13,7 +13,7 @@ A digit string is a string consisting of digits 0 through 9 that may contain lea
  */
 
 const MOD = BigInt(1000000007);
-var countGoodNumbers = function (n) {
+const countGoodNumbers = function (n) {
   const a = power(BigInt(5), parseInt(n / 2));
   const b = power(BigInt(4), parseInt(n / 2));
   if (n % 2 == 0) {
@@ -23,7 +23,7 @@ var countGoodNumbers = function (n) {
   }
 };
 
-var power = function (x, n) {
+const power = function (x, n) {
   if (n == 0) {
     return BigInt(1);
   }

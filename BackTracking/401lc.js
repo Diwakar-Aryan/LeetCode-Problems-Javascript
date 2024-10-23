@@ -15,7 +15,7 @@ function bitCount(n) {
   return count;
 }
 
-var readBinaryWatch = function (turnedOn) {
+const readBinaryWatch = function (turnedOn) {
   let resArr = [];
   for (let h = 0; h < 12; h++) {
     for (let m = 0; m < 60; m++) {

@@ -31,7 +31,7 @@ Output:
 
 */
 
-var combinationSum2 = function (candidates, target) {
+const combinationSum2 = function (candidates, target) {
   candidates.sort((a, b) => a - b);
   res = [];
   function backtrack(cur, i, target) {

@@ -19,7 +19,7 @@ Output: false
  * @param {number} k
  * @return {boolean}
  */
-var canPartitionKSubsets = function (nums, k) {
+const canPartitionKSubsets = function (nums, k) {
   nums.sort((a, b) => b - a);
   let sum = nums.reduce((prev, acc) => prev + acc, 0);
   let target = Math.floor(sum / k);

@@ -1,4 +1,4 @@
-var maxArea = function (height) {
+const maxArea = function (height) {
   let max = 0;
   let start = 0;
   let end = height.length - 1;

@@ -22,7 +22,7 @@ Explanation: Your function can return either index number 1 where the peak eleme
  * @param {number[]} nums
  * @return {number}
  */
-var findPeakElement = function (nums) {
+const findPeakElement = function (nums) {
 
    let l = 0, r = nums.length - 1
 

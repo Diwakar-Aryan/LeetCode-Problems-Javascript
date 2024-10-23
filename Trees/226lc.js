@@ -14,7 +14,7 @@ Given the root of a binary tree, invert the tree, and return its root.
  * @param {TreeNode} root
  * @return {TreeNode}
  */
-var invertTree = function (root) {
+const invertTree = function (root) {
     if(root == null) return null
   left = root.left;
   right = root.right;

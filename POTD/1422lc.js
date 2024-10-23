@@ -30,7 +30,7 @@ Output: 3
  
 */
 
-var maxScore = function (s) {
+const maxScore = function (s) {
   s = s.split("").map((x) => Number(x));
   let score = 0;
   let res = 0;

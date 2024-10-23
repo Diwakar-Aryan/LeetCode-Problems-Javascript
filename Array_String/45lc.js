@@ -1,4 +1,4 @@
-var jump = function (nums) {
+const jump = function (nums) {
   let steps = 0;
   let end = 0;
   let reach = 0;

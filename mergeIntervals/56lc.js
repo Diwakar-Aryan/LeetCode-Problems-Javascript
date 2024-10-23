@@ -1,4 +1,4 @@
-var merge = function (intervals) {
+const merge = function (intervals) {
   if (intervals.length < 2) return intervals;
   intervals.sort((a, b) => a[0] - b[0]);
 

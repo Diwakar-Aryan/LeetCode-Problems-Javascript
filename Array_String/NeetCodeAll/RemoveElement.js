@@ -6,7 +6,7 @@ Given an integer array nums and an integer val, remove all occurrences of val in
 
  */
 
-var removeElement = function (nums, val) {
+const removeElement = function (nums, val) {
 
 
    let ptr1 = nums.length -1 

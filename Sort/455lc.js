@@ -27,7 +27,7 @@ You need to output 2.
  * @param {number[]} s
  * @return {number}
  */
-var findContentChildren = function (g, s) {
+const findContentChildren = function (g, s) {
   g.sort((a, b) => { if (a < b) { return (b - a) } else return (a - b) })
   s.sort((a, b) => { if (a < b) { return (b - a) } else return (a - b) })
   let content = 0

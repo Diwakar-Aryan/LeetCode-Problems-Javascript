@@ -1,13 +1,13 @@
-Tree is an interesting data structure. It has wide variety of applications in all sorts of fields. For example:
+Tree is an interesting data structure. It has wide constiety of applications in all sorts of fields. For example:
 
 DOM is a tree data structure
 Directory and files in our OS can be represented as trees
 A family hierarchy can be represented as a tree.
-There are bunch of variations of tree (such as heaps, BST etc.) which can be used in solving problems related to scheduling, image processing, databases etc.
+There are bunch of constiations of tree (such as heaps, BST etc.) which can be used in solving problems related to scheduling, image processing, databases etc.
 
 Trees in a nutshell
 A tree is a non-linear data structure that organizes data hierarchically in nodes and cannot 
-contain cycles. A tree has a specific terminology that may vary slightly, but commonly, the 
+contain cycles. A tree has a specific terminology that may consty slightly, but commonly, the 
 following notions are adopted:
 • Root is the topmost node.
 • Edge is the link or connection between two nodes.

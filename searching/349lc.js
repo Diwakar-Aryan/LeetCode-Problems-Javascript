@@ -1,4 +1,4 @@
-var intersection = function (nums1, nums2) {
+const intersection = function (nums1, nums2) {
   let newSet = new Set(nums1, nums2);
   console.log(newSet);
 };

@@ -22,7 +22,7 @@ function TreeNode(val, left, right) {
  * @param {TreeNode} root2
  * @return {TreeNode}
  */
-var mergeTrees = function (root1, root2) {
+const mergeTrees = function (root1, root2) {
   if (root1 === null) return root2;
   if (root2 === null) return root1;
 

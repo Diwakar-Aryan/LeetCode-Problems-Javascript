@@ -1,7 +1,7 @@
 //O(n**2)
 
 
-var threeSum = function (nums) {
+const threeSum = function (nums) {
   nums.sort((a, b) => a - b);
   const triplets = [];
   for (i = 0; i < nums.length; i++) {

@@ -1,4 +1,4 @@
-var sortedSquares = function (nums) {
+const sortedSquares = function (nums) {
   let n = nums.length;
   let squares = Array(nums.length).fill(0);
   let highestSquareIndex = n - 1;

@@ -18,7 +18,7 @@ Output: ["3z4","3Z4"]
  * @param {string} s
  * @return {string[]}
  */
-var letterCasePermutation = function (s) {
+const letterCasePermutation = function (s) {
   let res = [];
   function dfs(pos, curr = "") {
     if (pos == s.length) {

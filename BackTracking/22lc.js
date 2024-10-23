@@ -11,7 +11,7 @@ Input: n = 1
 Output: ["()"]
 */
 
-var generateParenthesis = function (n) {
+const generateParenthesis = function (n) {
   const result = [];
   generate(result, "", 0, 0, n);
   console.log(result);

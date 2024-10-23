@@ -1,4 +1,4 @@
-var minSubArrayLen = function (target, nums) {
+const minSubArrayLen = function (target, nums) {
   let sum = 0;
   let minLen = Infinity;
 

@@ -20,7 +20,7 @@ Explanation: There is no common prefix among the input strings.
  */
 
 
-var longestCommonPrefix = function (strs) {
+const longestCommonPrefix = function (strs) {
    
    if(!strs.length) return ''
    let prefix = ''

@@ -17,7 +17,7 @@ Output: [[4,4]]
  * @param {number[]} nums
  * @return {number[][]}
  */
-var findSubsequences = function (nums) {
+const findSubsequences = function (nums) {
   let res = [];
   let element = [];
 

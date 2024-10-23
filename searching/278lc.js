@@ -38,7 +38,7 @@ Output: 1
  * @param {function} isBadVersion()
  * @return {function}
  */
-var solution = function (isBadVersion) {
+const solution = function (isBadVersion) {
   /**
    * @param {integer} n Total versions
    * @return {integer} The first bad version

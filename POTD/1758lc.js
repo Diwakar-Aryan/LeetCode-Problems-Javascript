@@ -24,7 +24,7 @@ Output: 2
 Explanation: You need two operations to reach "0101" or "1010".
 */
 
-var minOperations = function (s) {
+const minOperations = function (s) {
   let s1 = new Array(Math.floor(s.length / 2)).fill("01").join("");
   let s2 = new Array(Math.floor(s.length / 2)).fill("10").join("");
   if (s.length % 2 == 0) {

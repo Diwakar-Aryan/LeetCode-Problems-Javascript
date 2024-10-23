@@ -17,7 +17,7 @@ Input: s = "a"
 Output: [["a"]]
 */
 
-var partition = function (s) {
+const partition = function (s) {
   let res = [];
   backtrack(res, [], s, 0);
   return res;

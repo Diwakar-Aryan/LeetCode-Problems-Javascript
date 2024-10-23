@@ -27,7 +27,7 @@ Output: 0
 
  */
 
-var maxNumberOfBalloons = function(text) {
+const maxNumberOfBalloons = function(text) {
 
     let res =text.length;
      

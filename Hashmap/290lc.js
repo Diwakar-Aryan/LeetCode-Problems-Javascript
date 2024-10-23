@@ -20,7 +20,7 @@ Output: false
  
 */
 
-var wordPattern = function (pattern, s) {
+const wordPattern = function (pattern, s) {
   let patternMap = new Map();
   let sMap = new Map();
   let sArr = s.split(" ");

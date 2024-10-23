@@ -39,7 +39,7 @@ Output: [1,5,1]
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-var nextPermutation = function (nums) {
+const nextPermutation = function (nums) {
   let n = nums.length
 
   // Index of the first element that is smaller than

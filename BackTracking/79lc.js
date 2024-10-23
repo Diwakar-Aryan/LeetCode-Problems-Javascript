@@ -16,7 +16,7 @@ Output: false
 
 //TC = O(n*m *dfs) --> dfs -> 4^len(word)
 //TC - O(n*m*4^n)
-var exist = function (board, word) {
+const exist = function (board, word) {
   let rows = board.length;
   let cols = board[0].length;
   let path = [];

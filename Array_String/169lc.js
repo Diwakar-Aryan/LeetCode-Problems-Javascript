@@ -14,7 +14,7 @@
 */
 
 //TC - O(N) SC - O(N)
-var majorityElementNaive = function (nums) {
+const majorityElementNaive = function (nums) {
   let elemFreq = {};
   let majorityNumber = nums.length / 2;
   let element;

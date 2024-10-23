@@ -17,7 +17,7 @@ Output: [4,9,9,49,121]
  * @param {number[]} nums
  * @return {number[]}
  */
-var sortedSquares = function (nums) {
+const sortedSquares = function (nums) {
 
    let l = 0
    let r = nums.length - 1

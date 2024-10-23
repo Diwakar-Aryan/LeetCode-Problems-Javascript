@@ -17,7 +17,7 @@ Explanation: Because the 4th row is incomplete, we return 3.
 
 // Solved using Gauss formula
 
-var arrangeCoins = function (n) {
+const arrangeCoins = function (n) {
   let low = 1;
   let high = n;
   let mid;

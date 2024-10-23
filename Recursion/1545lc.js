@@ -56,7 +56,7 @@ function findString(n) {
   return ans;
 }
 
-var findKthBit = function (n, k) {
+const findKthBit = function (n, k) {
   let st = findString(n);
   return st[k - 1];
 };
