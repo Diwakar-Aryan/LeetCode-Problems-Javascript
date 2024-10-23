@@ -20,7 +20,7 @@ Explanation: 2 does not exist in nums so return -1
  
 
 */
-var search = function (nums, target) {
+const search = function (nums, target) {
   let i = 0;
   let j = nums.length - 1;
   let mid = i + Math.ceil((j - i) / 2);
