@@ -15,6 +15,8 @@ Output: 3
 Explanation: Because the 4th row is incomplete, we return 3.
 */
 
+// Solved using Gauss formula
+
 var arrangeCoins = function (n) {
   let low = 1;
   let high = n;
@@ -22,7 +24,7 @@ var arrangeCoins = function (n) {
 
   while (low <= high) {
     mid = Math.floor(low + (high - low) / 2);
-    if (n >= (mid * (mid + 1)) / 2) {
+    if (n >= (mid / 2 * (mid + 1))) {
       low = mid + 1;
     } else {
       high = mid - 1;
