@@ -16,3 +16,13 @@ following notions are adopted:
 • Leaf is a node that does not have a child node.
 • Height is the length of the longest path to a Leaf
 • Depth is the length of the path to its root.
+
+
+Two Techniques for tree traversal : 
+    i) Breadth-First Techniques
+    ii) Depth-first Techniques
+
+Breadth-First Techniques (BFS) :
+    i) In - order traversal --> Left -> Root --> Right
+    ii) Pre - order traversal   --> Root --> Left --> Right
+    iii) Post - order traversal --> Left --> Right --> Root
