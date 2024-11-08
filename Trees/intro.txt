@@ -26,3 +26,6 @@ Breadth-First Techniques (BFS) :
     i) In - order traversal --> Left -> Root --> Right
     ii) Pre - order traversal   --> Root --> Left --> Right
     iii) Post - order traversal --> Left --> Right --> Root
+
+Balanced Binary Tree : 
+    ABS(height of left Node - height of right Node) <= 1
