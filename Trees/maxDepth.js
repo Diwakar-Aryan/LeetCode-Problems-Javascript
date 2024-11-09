@@ -11,7 +11,7 @@ const Node = require("./Node");
  * @param {TreeNode} root
  * @return {number}
  */
-var maxDepth = function (root) {
+const maxDepth = function (root) {
   if (!root) return 0;
 
   let lh = maxDepth(root.left);
